@@ -31,7 +31,7 @@ setup(
     author="Dave Dash",
     author_email="dd+github@davedash.com, contato@henriquelopes.com.br",
     version='0.2',
-    name="Mysql Anonymous",
+    name="mysql-anonymous",
     url="https://github.com/davedash/mysql-anonymous",
     packages=["anonymize"],
     platforms=['python >= 2.7'],
