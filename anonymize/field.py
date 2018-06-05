@@ -17,6 +17,10 @@ class Nullify(Field):
     sql_field = "`{field}` = NULL"
 
 
+class Empty(Field):
+    sql_field = "`{field}` = ''"
+
+
 class RandomInt(Field):
     sql_field = "`{field}` = ROUND(RAND()*1000000)"
 
@@ -61,6 +65,7 @@ class AnonymizeField(object):
 
         self._fields = {
             "nullify": Nullify,
+            "empty": Empty,
             "random_int": RandomInt,
             "random_ip": RandomIp,
             "random_email": RandomEmail,
